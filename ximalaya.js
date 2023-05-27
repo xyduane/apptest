@@ -13,7 +13,7 @@ hostname = 113.62.116.232,61.243.13.91,*xima*,*.xmcdn.com,180.153.255.*,180.153.
 let body = $response.body;
 
 body = body.replace(/\"authorized":false/g, '\"authorized":true');
-body = body.replace(/\"vipFlag":\d+/g, '\"vipFlag":1');
+body = body.replace(/\"vipFlag":\d+/g, '\"vipFlag":4');
 body = body.replace(/\"nickName":".*?"/g, '\"nickName":"沫沫六月Vip"');
 console.log(body)
 
