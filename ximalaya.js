@@ -10,7 +10,7 @@ hostname = 113.62.116.232,61.243.13.91,*xima*,*.xmcdn.com,180.153.255.*,180.153.
 
 *************************************/
 
-let body = $request.body;
+let body = $response.body;
 
 body = body.replace(/\"authorized":false/g, '\"authorized":true');
 console.log(body)
