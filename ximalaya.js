@@ -12,7 +12,11 @@ hostname = 113.62.116.232,61.243.13.91,*xima*,*.xmcdn.com,180.153.255.*,180.153.
 
 let body = $response.body;
 
-
+body = body.replace(/\"authorized":false/g, '\"authorized":true');
+body = body.replace(/\"isAuthorized":false/g, '\"isAuthorized":true');
+body = body.replace(/\"isSubscribe":false/g, '\"isSubscribe":true');
+body = body.replace(/\"subscribe":false/g, '\"subscribe":true');
+body = body.replace(/\"noAuthorizedReason":\d+/g, '\"noAuthorizedReason":0');
 body = body.replace(/\"vipFlag":\d+/g, '\"vipFlag":1');
 body = body.replace(/\"vipRank":\d+/g, '\"vipRank":2');
 body = body.replace(/\"nickName":".*?"/g, '\"nickName":"沫沫六月Vip"');
