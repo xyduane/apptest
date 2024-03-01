@@ -8,7 +8,7 @@
 hostname = www.rtfund.com,wx.rtfund.com
 
 [rewrite_local]
-^https://wx.rtfund.com/gbusweb/msitepro/$ url script-response-body https://raw.githubusercontent.com/xyduane/apptest/main/addBasicAuth.js
+^https:\/\/.*\.rtfund\.com url script-request-header https://raw.githubusercontent.com/xyduane/apptest/main/addBasicAuth.js
 *******************************/
 
 var modifiedHeaders = $request.headers;
