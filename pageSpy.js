@@ -1,4 +1,5 @@
 var body = $response.body;
+console.log($response);
 var url = $request.url;
 
 if (body) {
