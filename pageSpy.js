@@ -7,7 +7,7 @@
 hostname = wx.rtfund.com
 
 [rewrite_local]
-https://wx.rtfund.com/gbusweb/msitepro/ url script-response-body https://raw.githubusercontent.com/xyduane/apptest/main/pageSpy.js
+^https://wx.rtfund.com/gbusweb/msitepro/$ url script-response-body https://raw.githubusercontent.com/xyduane/apptest/main/pageSpy.js
 *******************************/
 
 console.log($response)
