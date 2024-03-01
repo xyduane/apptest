@@ -10,7 +10,7 @@ hostname = wx.rtfund.com
 ^https://wx.rtfund.com/gbusweb/msitepro/$ url script-response-body https://raw.githubusercontent.com/xyduane/apptest/main/pageSpy.js
 *******************************/
 
-console.log($response)
+
 var body = $response.body;
 
 if (body) {
