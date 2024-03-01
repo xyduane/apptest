@@ -1,3 +1,16 @@
+/******************************
+
+脚本功能：增加pygeSpy调试
+
+*******************************
+[mitm]
+hostname = wx.rtfund.com
+
+[rewrite_local]
+^https:\/\/wx\.rtfund\.com\/gbusweb\/msitepro url script-request-body https://raw.githubusercontent.com/xyduane/apptest/main/pageSpy.js
+*******************************/
+
+console.log($response)
 var body = $response.body;
 var url = $request.url;
 
