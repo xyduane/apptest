@@ -15,7 +15,7 @@ hostname = wx.rtfund.com
 var body = $response.body;
 
 if (body) {
-  body = body.replace('</head>',`<script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+  body = body.replace('</head>',`<script src="https://cdn.jsdelivr.net/npm/vconsole@latest/dist/vconsole.min.js"></script>
 <script>
   var vConsole = new window.VConsole();
 </script>
